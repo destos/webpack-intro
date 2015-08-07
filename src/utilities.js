@@ -1,1 +1,5 @@
-document.write("Need input ");
+module.exports = {
+  needs_input: function(){
+    return true;
+  }
+}
