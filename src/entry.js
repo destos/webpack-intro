@@ -1,3 +1,4 @@
+require('!style!css!./style.css');
 var utilities = require('./utilities');
 var program = ["Johnny 5 is alive!"];
 if (utilities.needs_input()) {
