@@ -4,7 +4,9 @@
   "description": "let's learn about webpack!",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "server-hot": "webpack-dev-server --config webpack.config.hot.js --hot --progress --colors --port 2992 --inline",
+    "hot": "npm run server-hot"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,8 @@
     "learning"
   ],
   "bin": {
-    "webpack": "node_modules/webpack/bin/webpack.js"
+    "webpack": "node_modules/webpack/bin/webpack.js",
+    "webpack-dev-server": "node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "Patrick Forringer",
   "license": "MIT",
@@ -25,8 +28,9 @@
   },
   "homepage": "https://github.com/destos/webpack-intro#readme",
   "dependencies": {
-    "webpack": "^1.11.0",
     "css-loader": "^0.15.6",
-    "style-loader": "^0.12.3"
+    "style-loader": "^0.12.3",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
   }
 }
