@@ -1,0 +1,30 @@
+{
+  "name": "webpack-intro",
+  "version": "1.0.0",
+  "description": "let's learn about webpack!",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/destos/webpack-intro.git"
+  },
+  "keywords": [
+    "webpack",
+    "intro",
+    "learning"
+  ],
+  "bin": {
+    "webpack": "node_modules/webpack/bin/webpack.js"
+  },
+  "author": "Patrick Forringer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/destos/webpack-intro/issues"
+  },
+  "homepage": "https://github.com/destos/webpack-intro#readme",
+  "devDependencies": {
+    "webpack": "^1.11.0"
+  }
+}
