@@ -1,4 +1,5 @@
 require('./style.css');
+require('./picky-designer.styl')
 
 import Robot from "./utilities"
 

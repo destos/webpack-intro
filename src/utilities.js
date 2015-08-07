@@ -9,7 +9,7 @@ export default class Robot{
   }
   is_alive() {
     if (this.is_alive) {
-      this.add_to_program(this.name + " is" + (this.alive ? "" : " not") + " alive!");
+      this.add_to_program("<span class=\"robot-name\">" + this.name + "</span>" + " is" + (this.alive ? "" : " not") + " alive!");
     }
   }
   add_to_program(input) {
