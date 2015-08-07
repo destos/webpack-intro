@@ -1,3 +1,6 @@
+var webpack = require("webpack");
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
   entry: "./src/entry.js",
   output: {
@@ -8,7 +11,7 @@ module.exports = {
     loaders: [
       {
         test: /\.css$/,
-        loader: "style!css"
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       },
       {
         test: /\.js$/,
@@ -21,5 +24,10 @@ module.exports = {
       }
     ]
   },
-  devtool: "source-map"
+  devtool: "source-map",
+  "plugins": [
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin({ output: {comments: false} }),
+    new ExtractTextPlugin('[name].css', {allChunks: true})
+  ]
 };
