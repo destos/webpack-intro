@@ -1,7 +1,10 @@
 require('./style.css');
-var utilities = require('./utilities');
-var program = ["Johnny 5 is alive!"];
-if (utilities.needs_input()) {
-  program.push("Needs input!");
-}
-document.write(program.join(" "));
+
+import Robot from "./utilities"
+
+var robot = new Robot("Johnny 5");
+robot.is_alive();
+robot.alive = true;
+robot.is_alive();
+robot.add_to_program("Needs input!");
+robot.run_program();
