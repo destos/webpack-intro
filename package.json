@@ -4,7 +4,7 @@
   "description": "let's learn about webpack!",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --progress --colors",
     "server-hot": "webpack-dev-server --config webpack.config.hot.js --hot --progress --colors --port 2992 --inline",
     "hot": "npm run server-hot"
   },

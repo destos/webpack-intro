@@ -1,7 +1,7 @@
+require('./picky-designer.styl');
 require('./style.css');
-require('./picky-designer.styl')
 
-import Robot from "./utilities"
+import Robot from './utilities.js';
 
 var robot = new Robot("Johnny 5");
 robot.is_alive();
