@@ -296,9 +296,7 @@ export default class Robot{
     return true;
   }
   is_alive() {
-    if (this.is_alive) {
-      this.add_to_program(this.name + " is" + (this.alive ? "" : " not") + " alive!");
-    }
+    this.add_to_program(this.name + " is" + (this.alive ? "" : " not") + " alive!");
   }
   add_to_program(input) {
     this.program.push(input);
