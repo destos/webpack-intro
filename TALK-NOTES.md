@@ -488,4 +488,11 @@ is_alive() {
 
 Test out your build and hot reload scripts. Try modifying the stylus file with the hot reload build!
 
+# Homework
+
+* Try adding ES6 string interpolation to our template strings.
+* Add your own ES6 class in a a new file and use it in our Robot class.
+* Try creating new stylus files and including them within our picky-designer.styl, not a JS file. ( may need to research, hint: @import )  
+* Add another loader, maybe coffeescript? Try requiring it from a JS file.
+
 # That's all folks, any questions?
