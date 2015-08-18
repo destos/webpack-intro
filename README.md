@@ -14,3 +14,5 @@ We'll be focusing on using webpack to help organize the build process for a comp
 * Understanding the power of plugins
 * Using the Dedupe and UglifyJs Plugins to pack up our frontend code
 * Adding hot reloading to a project ( believe me you'll want to see this )
+
+[Onto the talk notes!](TALK-NOTES.md)
